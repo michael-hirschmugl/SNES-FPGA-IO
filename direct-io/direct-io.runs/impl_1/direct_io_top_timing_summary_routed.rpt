@@ -1,0 +1,436 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Oct 25 14:05:35 2024
+| Host         : ATGRZWN119215 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file direct_io_top_timing_summary_routed.rpt -pb direct_io_top_timing_summary_routed.pb -rpx direct_io_top_timing_summary_routed.rpx -warn_on_violation
+| Design       : direct_io_top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    5          inf        0.000                      0                    5           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             5 Endpoints
+Min Delay             5 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 snes_dat[3]
+                            (input port)
+  Destination:            leds[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.469ns  (logic 5.067ns (59.829%)  route 3.402ns (40.171%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y17                                               0.000     0.000 r  snes_dat[3] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[3]
+    Y17                  IBUF (Prop_ibuf_I_O)         1.567     1.567 r  snes_dat_IBUF[3]_inst/O
+                         net (fo=1, routed)           3.402     4.969    leds_OBUF[3]
+    G14                  OBUF (Prop_obuf_I_O)         3.500     8.469 r  leds_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     8.469    leds[3]
+    G14                                                               r  leds[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[1]
+                            (input port)
+  Destination:            leds[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.311ns  (logic 5.031ns (60.542%)  route 3.279ns (39.458%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y19                                               0.000     0.000 r  snes_dat[1] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[1]
+    Y19                  IBUF (Prop_ibuf_I_O)         1.519     1.519 r  snes_dat_IBUF[1]_inst/O
+                         net (fo=1, routed)           3.279     4.798    leds_OBUF[1]
+    G17                  OBUF (Prop_obuf_I_O)         3.513     8.311 r  leds_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     8.311    leds[1]
+    G17                                                               r  leds[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[0]
+                            (input port)
+  Destination:            leds[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.142ns  (logic 5.097ns (62.596%)  route 3.045ns (37.404%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y18                                               0.000     0.000 r  snes_dat[0] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[0]
+    Y18                  IBUF (Prop_ibuf_I_O)         1.525     1.525 r  snes_dat_IBUF[0]_inst/O
+                         net (fo=1, routed)           3.045     4.570    leds_OBUF[0]
+    L15                  OBUF (Prop_obuf_I_O)         3.572     8.142 r  leds_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     8.142    leds[0]
+    L15                                                               r  leds[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[4]
+                            (input port)
+  Destination:            leds[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.015ns  (logic 5.094ns (63.549%)  route 2.922ns (36.451%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U18                                               0.000     0.000 r  snes_dat[4] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[4]
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  snes_dat_IBUF[4]_inst/O
+                         net (fo=1, routed)           2.922     4.420    leds_OBUF[4]
+    L14                  OBUF (Prop_obuf_I_O)         3.595     8.015 r  leds_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     8.015    leds[4]
+    L14                                                               r  leds[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[2]
+                            (input port)
+  Destination:            leds[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.738ns  (logic 5.144ns (66.480%)  route 2.594ns (33.520%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y16                                               0.000     0.000 r  snes_dat[2] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[2]
+    Y16                  IBUF (Prop_ibuf_I_O)         1.569     1.569 r  snes_dat_IBUF[2]_inst/O
+                         net (fo=1, routed)           2.594     4.163    leds_OBUF[2]
+    N15                  OBUF (Prop_obuf_I_O)         3.575     7.738 r  leds_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.738    leds[2]
+    N15                                                               r  leds[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 snes_dat[2]
+                            (input port)
+  Destination:            leds[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.270ns  (logic 1.612ns (70.984%)  route 0.659ns (29.016%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y16                                               0.000     0.000 r  snes_dat[2] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[2]
+    Y16                  IBUF (Prop_ibuf_I_O)         0.336     0.336 r  snes_dat_IBUF[2]_inst/O
+                         net (fo=1, routed)           0.659     0.995    leds_OBUF[2]
+    N15                  OBUF (Prop_obuf_I_O)         1.275     2.270 r  leds_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     2.270    leds[2]
+    N15                                                               r  leds[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[4]
+                            (input port)
+  Destination:            leds[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.348ns  (logic 1.562ns (66.500%)  route 0.787ns (33.500%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U18                                               0.000     0.000 r  snes_dat[4] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[4]
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  snes_dat_IBUF[4]_inst/O
+                         net (fo=1, routed)           0.787     1.053    leds_OBUF[4]
+    L14                  OBUF (Prop_obuf_I_O)         1.296     2.348 r  leds_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     2.348    leds[4]
+    L14                                                               r  leds[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[0]
+                            (input port)
+  Destination:            leds[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.379ns  (logic 1.565ns (65.765%)  route 0.814ns (34.235%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y18                                               0.000     0.000 r  snes_dat[0] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[0]
+    Y18                  IBUF (Prop_ibuf_I_O)         0.292     0.292 r  snes_dat_IBUF[0]_inst/O
+                         net (fo=1, routed)           0.814     1.107    leds_OBUF[0]
+    L15                  OBUF (Prop_obuf_I_O)         1.273     2.379 r  leds_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.379    leds[0]
+    L15                                                               r  leds[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[1]
+                            (input port)
+  Destination:            leds[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.394ns  (logic 1.500ns (62.650%)  route 0.894ns (37.350%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y19                                               0.000     0.000 r  snes_dat[1] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[1]
+    Y19                  IBUF (Prop_ibuf_I_O)         0.286     0.286 r  snes_dat_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.894     1.180    leds_OBUF[1]
+    G17                  OBUF (Prop_obuf_I_O)         1.214     2.394 r  leds_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     2.394    leds[1]
+    G17                                                               r  leds[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 snes_dat[3]
+                            (input port)
+  Destination:            leds[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.454ns  (logic 1.535ns (62.551%)  route 0.919ns (37.449%))
+  Logic Levels:           2  (IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y17                                               0.000     0.000 r  snes_dat[3] (INOUT)
+                         net (fo=0)                   0.000     0.000    snes_dat[3]
+    Y17                  IBUF (Prop_ibuf_I_O)         0.334     0.334 r  snes_dat_IBUF[3]_inst/O
+                         net (fo=1, routed)           0.919     1.253    leds_OBUF[3]
+    G14                  OBUF (Prop_obuf_I_O)         1.201     2.454 r  leds_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     2.454    leds[3]
+    G14                                                               r  leds[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
